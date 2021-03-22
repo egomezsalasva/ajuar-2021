@@ -1,9 +1,10 @@
 // IMPORTS
   // -Modules
-  import Head from 'next/head'
+    import Head from 'next/head'
+    import dynamic from 'next/dynamic'
   // -Components
-    import MenajeDesktop from '../components/menaje/MenajeDesktop/index'
-    import MenajeMobile from '../components/menaje/MenajeMobile/index'
+    const MenajeDesktop = dynamic( () => import('../components/menaje/MenajeDesktop/index'), { ssr: false } )
+    const MenajeMobile = dynamic( () => import('../components/menaje/MenajeMobile/index'), { ssr: false } )
   // -Custom Hooks
     import { useWidth } from '../hooks/useWidth'
   // -Styles
