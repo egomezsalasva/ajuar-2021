@@ -1,7 +1,7 @@
 // IMPORTS
     // - Modules
         import { useRef, useState } from 'react'
-import styled from 'styled-components'
+        import styled from 'styled-components'
     // - Components
 
     // - Styles
@@ -42,11 +42,11 @@ import styled from 'styled-components'
     export default function ContactInfo() {
 
         const [email] = useState("casa@ajuarestudio.com")
-        const [copySuccess, setCopySuccess] = useState("(Copy)")
+        const [copySuccess, setCopySuccess] = useState("(Copiar)")
 
         const copyCodeToClipboard = () => {
             navigator.clipboard.writeText(email)
-            setCopySuccess("(Copied)")
+            setCopySuccess("(Copiado)")
         }
 
         return (
