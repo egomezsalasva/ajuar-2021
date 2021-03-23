@@ -1,13 +1,15 @@
 // IMPORTS
   // -Modules
     import styled from 'styled-components'
-    import { useRouter } from 'next/router'
+    import { useContext } from 'react'
+    import gsap from 'gsap'
   // -Styles
     import {brandingColors, brandingFonts} from '../../styles/customStyles/brandingStyles'
     import { cursors, zIndexes, breakpoints } from '../../styles/customStyles/globalStyles'
-    import { useEffect } from 'react'
   // -Custom Hook
-    import { useWidth } from '../../hooks/useWidth'
+
+  // -Context
+    import {MenuContext} from '../../contexts/menuContext'
 //
 
 
@@ -22,6 +24,7 @@
     letter-spacing: 0.5px;
     line-height: 0.95;
     cursor: ${cursors.eyePointer};
+    color: ${props => props.inputColor || brandingColors.light};
     @media (max-width: ${breakpoints.mobileDesign}) {
       font-size: 2rem;
       font-size: 7.25vw;
@@ -31,31 +34,18 @@
 
 
 //  MAIN COMPONENT
-  const MenuButton = ({toggleMenuActive, menuActive, clickAnimation }) => {  
-   
-    // Menu button conditional Black or White
-      const router = useRouter()
-      const windowWidth = useWidth()
-      
-      const menuColorConditional = () => {
-        if(router.pathname === '/contacto' && menuActive === false ){
-          return brandingColors.dark
-        } else if (router.pathname === '/menaje/mensual' && menuActive === false ) {
-          return brandingColors.dark
-        } else if (router.pathname === '/menaje/esporadico' && menuActive === false ) {
-          return brandingColors.dark
-        } else if (router.pathname === '/menaje/starter-pack' && menuActive === false ) {
-          return brandingColors.dark
-        } else {
-          return brandingColors.light
-        }
-      }
+  const MenuButton = ({ inputColorProp }) => {  
 
-      useEffect( () => {
-        menuColorConditional()
-      }, [])
-      
-    // 
+    const { menuActive, toggleMenuActive, menuContainerRef, dur, del } = useContext(MenuContext)
+  
+
+    const clickAnimation = () => {
+      if(menuActive === false){
+          gsap.to(menuContainerRef.current, { duration: dur, yPercent: 100,  ease: "power1.out" })
+      } else {
+          gsap.to(menuContainerRef.current, { duration: dur, yPercent: 0, ease: "power1.in", delay: del  })
+      }
+  }
 
     const clickHandlers = () => {
       toggleMenuActive()
@@ -63,7 +53,7 @@
     }
 
     return (
-          <Button onClick={clickHandlers} style={{color: menuColorConditional()}} >
+          <Button onClick={clickHandlers}  inputColor={inputColorProp}>
             {menuActive ? "(Cerrar)" : "Menu"}
           </Button>
     )

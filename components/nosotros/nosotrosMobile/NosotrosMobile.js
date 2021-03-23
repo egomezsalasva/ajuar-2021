@@ -3,6 +3,7 @@
     import styled from 'styled-components'
   // -Components
     import PageTitleMobile from '../../global/globalMobile/PageTitleMobile'
+    import MenuButton from '../../global/MenuButton'
   // -Styles
     import {brandingColors, brandingFonts} from '../../../styles/customStyles/brandingStyles'
 //
@@ -56,6 +57,7 @@
             <div className="logo">AJUAR</div>
           </TextNosotros>
           <PageTitleMobile>Nosotros</PageTitleMobile>
+          <MenuButton />
         </Container>
       </>
     )

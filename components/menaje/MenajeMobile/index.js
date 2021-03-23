@@ -7,7 +7,8 @@
         import MensualContent from './MensualContent'
         import EsporadicoContent from './EsporadicoContent'
         import StarterPackContent from './StarterPackContent'
-    // - Components
+        import MenuButton from '../../global/MenuButton'
+    // - Styles
         import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
 //
 
@@ -69,7 +70,7 @@
         </AccordionContainer>
 
         <PageTitleMobile>Menaje</PageTitleMobile>
-
+        <MenuButton />
       </>
     )
   }

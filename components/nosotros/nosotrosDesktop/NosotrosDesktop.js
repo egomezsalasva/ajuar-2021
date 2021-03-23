@@ -4,6 +4,7 @@
   // -Components
     import PageTitle from '../../global/globalDesktop/PageTitle'
     import TextoImagen from './TextoImagen'
+    import MenuButton from '../../global/MenuButton'
     //import TextoImagen02 from './TextoImagen02'
   // -Styles
     import {brandingColors, brandingFonts} from '../../../styles/customStyles/brandingStyles'
@@ -56,6 +57,7 @@
             <div className="logo">AJUAR</div>
           </TextNosotros>
           <PageTitle>Nosotros</PageTitle>
+          <MenuButton />
         </Container>
       </>
     )

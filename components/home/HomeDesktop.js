@@ -6,8 +6,10 @@
   import HomeWrapper from './HomeWrapper'
   import Logo from '../global/Logo'
   import DescriptionHome from './DescriptionHome'
+  import MenuButton from '../global/MenuButton'
   // -Styles
   import { breakpoints } from '../../styles/customStyles/globalStyles'
+  import { brandingColors } from '../../styles/customStyles/brandingStyles'
 //
 
 // MAIN COMPONENT
@@ -31,6 +33,7 @@
               <LogoBox/>
               <DescriptionHome />
             </HomeWrapper>
+            <MenuButton />
         </Container>
     )
   }

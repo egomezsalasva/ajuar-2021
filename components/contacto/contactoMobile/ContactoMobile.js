@@ -5,9 +5,10 @@
   // - Component
     import PageTitleMobile from '../../global/globalMobile/PageTitleMobile'
     import ContactInfo from './ContactInfo'
+    import MenuButton from '../../global/MenuButton'
+  // - Styles
     import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
     import { cursors } from '../../../styles/customStyles/globalStyles'
-  // - Styles
 //
 
 
@@ -144,6 +145,7 @@ export default function ContactoMobile() {
       </FormContainer>
 
       <PageTitleMobile>Escribenos</PageTitleMobile>
+      <MenuButton />
     </>
   )
 }
