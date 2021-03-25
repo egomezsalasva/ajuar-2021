@@ -34,6 +34,7 @@
 
         .title{
             cursor: ${cursors.eyePointer};
+            letter-spacing: 1px;
             &:hover{
                 font-family: ${brandingFonts.displayItalic};
             }
