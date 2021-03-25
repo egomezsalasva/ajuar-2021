@@ -28,8 +28,8 @@
 
     `
 
-    const imageWidth = "200px"
-    const imageHeight = "300px"
+    const imageWidth = "400px"
+    const imageHeight = "600px"
     const ImageBox = styled.span`
         position: absolute;
         width: ${imageWidth};
@@ -44,7 +44,7 @@
         left:${ props => props.inputX || "50%" };
         top: ${ props => props.inputY || "50%" };
         margin-left: calc(-${imageWidth} / 2);
-        margin-top: ${props => props.portraitImg ? 0 : "-150px" };
+        margin-top: ${props => props.portraitImg ? 0 : "-300px" };
         transform: scale(0.1);
     `
 // 
