@@ -16,9 +16,18 @@ const cursors = {
 const breakpoints = {
     mobileDesign: "610px",
     mobileDesignHook: 610,
+    tabletDesign: "1080px",
     tabletDesignHook: 1080,
+    laptopDesign: "1440px",
+    laptopDesignHook: 1440,
+}
+
+const pxToPercentage = {
+    vw20px: "1.38888vw",
+    vw30px: "2.083333vw",
+
 }
 
 
 
-export { zIndexes, cursors, breakpoints }
+export { zIndexes, cursors, breakpoints, pxToPercentage }
