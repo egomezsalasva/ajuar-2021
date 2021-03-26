@@ -12,9 +12,6 @@
         height: 100%; 
         overflow: scroll;
         background: ${props => props.inputColor || brandingColors.dark};
-        /* display: flex;
-        align-items: flex-start;
-        justify-content: center; */
     ` 
 //
 
