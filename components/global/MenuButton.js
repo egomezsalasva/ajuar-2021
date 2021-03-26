@@ -5,7 +5,7 @@
     import gsap from 'gsap'
   // -Styles
     import {brandingColors, brandingFonts} from '../../styles/customStyles/brandingStyles'
-    import { cursors, zIndexes, breakpoints, pxToPercentage } from '../../styles/customStyles/globalStyles'
+    import { cursors, zIndexes, breakpoints, pxToVW } from '../../styles/customStyles/globalStyles'
   // -Custom Hook
 
   // -Context
@@ -16,8 +16,8 @@
 // STYLES
   const Button = styled.div`
     position: fixed;
-    bottom: ${pxToPercentage.vw20px};
-    right: ${pxToPercentage.vw30px};
+    bottom: ${pxToVW.vw20px};
+    right: ${pxToVW.vw30px};
     z-index: ${zIndexes.menuButton};
     font-family: ${brandingFonts.textRegular};
     font-size: 3.61vw;
