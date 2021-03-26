@@ -4,17 +4,22 @@
   //import Image from 'next/image'
   import styled from 'styled-components'
   // -Styles
-  import { cursors, zIndexes, breakpoints } from '../../styles/customStyles/globalStyles'
+  import { cursors, breakpoints, pxToPercentage } from '../../styles/customStyles/globalStyles'
 //
 
 
 // STYLES
   const LogoImg = styled.img`
     position: absolute;
-    top: 30px;
-    left: 30px;
-    //z-index: ${zIndexes.logo};
+    top: ${pxToPercentage.vw30px};
+    left: ${pxToPercentage.vw30px};
+    width: 17.43vw;
     cursor: ${cursors.eyePointer};
+    @media (max-width: ${breakpoints.laptopDesign}) {
+      top: 30px;
+      left: 30px;
+      width: 251px;
+    }
     @media (max-width: ${breakpoints.mobileDesign}) {
       width: 183px;
     }
