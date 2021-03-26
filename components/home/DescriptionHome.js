@@ -12,10 +12,8 @@
 
 // STYLES
     const DescriptionContainer = styled.div`
-    
         margin: ${pxToVW.vw30px} ${pxToVW.vw30px} ${pxToVW.vw20px};
         max-width: calc(100vw - ${pxToVW.vw30px} - ${pxToVW.vw30px} - ${pxToVW.vw220px});
-
         @media (max-width: ${breakpoints.laptopDesign}) {
             margin: 30px 30px 20px;
             max-width: calc(100vw - 30px - 30px - 220px); //full screen - margins - menuContainerSize
