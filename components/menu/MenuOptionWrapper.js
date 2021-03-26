@@ -14,7 +14,7 @@
         font-family: ${brandingFonts.display};
         font-size: 7.3rem;
         color: ${brandingColors.light};
-        letter-spacing: -2.5px;
+        /* letter-spacing: -2.5px; */
         @media (max-width: ${breakpoints.mobileDesign}){
             font-size: 4.7rem;
             letter-spacing: 1px;
@@ -34,7 +34,6 @@
 
         .title{
             cursor: ${cursors.eyePointer};
-            letter-spacing: 1px;
             &:hover{
                 font-family: ${brandingFonts.displayItalic};
             }
