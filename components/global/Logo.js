@@ -4,15 +4,15 @@
   //import Image from 'next/image'
   import styled from 'styled-components'
   // -Styles
-  import { cursors, breakpoints, pxToPercentage } from '../../styles/customStyles/globalStyles'
+  import { cursors, breakpoints, pxToVW } from '../../styles/customStyles/globalStyles'
 //
 
 
 // STYLES
   const LogoImg = styled.img`
     position: absolute;
-    top: ${pxToPercentage.vw30px};
-    left: ${pxToPercentage.vw30px};
+    top: ${pxToVW.vw30px};
+    left: ${pxToVW.vw30px};
     width: 17.43vw;
     cursor: ${cursors.eyePointer};
     @media (max-width: ${breakpoints.laptopDesign}) {

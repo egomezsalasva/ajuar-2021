@@ -22,12 +22,14 @@ const breakpoints = {
     laptopDesignHook: 1440,
 }
 
-const pxToPercentage = {
+const pxToVW = {
     vw20px: "1.38888vw",
     vw30px: "2.083333vw",
+
+    vw220px: "15.2777vw",
 
 }
 
 
 
-export { zIndexes, cursors, breakpoints, pxToPercentage }
+export { zIndexes, cursors, breakpoints, pxToVW }
