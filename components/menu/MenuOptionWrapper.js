@@ -15,14 +15,14 @@
 
         .number{
             position: absolute;
-            font-family: ${brandingFonts.textLight};
+            font-family: ${brandingFonts.textRegularItalic};
             font-size: 1.1111vw;
             padding-right: ${pxToVW.vw50px};
-            transform: translate(-${pxToVW.vw50px}, ${pxToVW.vw90px});
+            transform: translate(-${pxToVW.vw50px}, ${pxToVW.vw50px});
             @media (max-width: ${breakpoints.laptopDesign}){
                 font-size: 1.06rem;
                 padding-right: 50px;
-                transform: translate(-50px, 90px);
+                transform: translate(-50px, 60px);
             }
             @media (max-width: ${breakpoints.mobileDesign}){
                 display: none;
@@ -47,7 +47,7 @@
 
         .helperTextDesktop{
             position: absolute;
-            font-family: ${brandingFonts.textLight};
+            font-family: ${brandingFonts.textRegularItalic};
             font-size: 1.1111vw;
             transform: translate(${pxToVW.vw50px}, ${pxToVW.vw20px});
             @media (max-width: ${breakpoints.laptopDesign}){
@@ -63,7 +63,7 @@
             @media (max-width: ${breakpoints.mobileDesign}){
                 display: block;
                 position: relative;
-                font-family: ${brandingFonts.textLight};
+                font-family: ${brandingFonts.textRegularItalic};
                 font-size: 1.06rem;
                 letter-spacing: 1px;
             }
