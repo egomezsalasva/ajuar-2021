@@ -9,10 +9,6 @@
 //
 
 
-// STYLES
-
-//
-
 
 // MAIN COMPONENT
   export default function Esporadico() {

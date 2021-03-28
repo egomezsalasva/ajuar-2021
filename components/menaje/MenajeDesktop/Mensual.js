@@ -9,9 +9,6 @@
 //
 
 
-// STYLES
-//
-
 
 // MAIN COMPONENT
   export default function Mensual() {
