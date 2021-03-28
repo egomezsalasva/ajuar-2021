@@ -24,11 +24,6 @@
       <>
         <Head>
           <title>Ajuar · Nosotros</title>
-          <link rel="icon" href="/favicon.ico" />
-          <link rel="preload" href="/fonts/cako/Cako-Regular.eot" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/cako/Cako-RegularItalic.eot" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/suisse/SuisseIntl-Light.eot" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/suisse/SuisseIntl.eot" as="font" crossOrigin="" />
         </Head>
 
         { windowWidth < breakpoints.mobileDesignHook ? <NosotrosMobile /> : <NosotrosDesktop /> }

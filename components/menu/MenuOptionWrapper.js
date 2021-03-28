@@ -18,7 +18,7 @@
             font-family: ${brandingFonts.textRegularItalic};
             font-size: 1.1111vw;
             padding-right: ${pxToVW.vw50px};
-            transform: translate(-${pxToVW.vw50px}, ${pxToVW.vw50px});
+            transform: translate(-${pxToVW.vw50px}, ${pxToVW.vw60px});
             @media (max-width: ${breakpoints.laptopDesign}){
                 font-size: 1.06rem;
                 padding-right: 50px;

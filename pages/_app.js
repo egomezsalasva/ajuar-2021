@@ -1,8 +1,6 @@
 // IMPORTS
   // -Modules
-    import { useEffect, useRef, useState } from 'react'
-    import { useRouter } from 'next/router'
-    import gsap from 'gsap'
+    import Head from 'next/head'
   // -Components
     import Menu from '../components/menu/Menu'
   // -Styles
@@ -19,6 +17,13 @@
 
     return (
       <>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="preload" href="/fonts/cako/Cako-Regular.eot" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/cako/Cako-RegularItalic.eot" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/suisse/SuisseIntl-Light.eot" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/suisse/SuisseIntl.eot" as="font" crossOrigin="" />
+        </Head>
         <MenuContextProvider>
           <Menu />
           <Component {...pageProps} />
