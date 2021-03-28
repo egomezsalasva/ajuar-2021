@@ -17,7 +17,6 @@
 
 // STYLES
     const MenuContainer = styled.div`
-        //display: ${props => props.active ? "flex" : "none"};
         display: flex;
         position: fixed;
         top: 0px;
@@ -26,7 +25,7 @@
         bottom: 0px;
         width: 100vw;
         height: 100vh;
-        transform: translateY(-100%);
+        transform: translateY(-100vh);
         z-index: ${zIndexes.menu};
         background: ${brandingColors.dark};
         justify-content: center;

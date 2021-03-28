@@ -3,7 +3,7 @@
     import styled from 'styled-components'
     // - Styles
     import { brandingColors, brandingFonts } from '../../styles/customStyles/brandingStyles'
-    import { breakpoints } from '../../styles/customStyles/globalStyles'
+    import { breakpoints, pxToVW } from '../../styles/customStyles/globalStyles'
     import { cursors } from '../../styles/customStyles/globalStyles'
 // 
 
@@ -11,40 +11,49 @@
 // STYLES
     const MenuOptionStyle = styled.div`
         text-align: center;
-        font-family: ${brandingFonts.display};
-        font-size: 7.3rem;
         color: ${brandingColors.light};
-        /* letter-spacing: -2.5px; */
-        @media (max-width: ${breakpoints.mobileDesign}){
-            font-size: 4.7rem;
-            letter-spacing: 1px;
-        }
 
         .number{
             position: absolute;
             font-family: ${brandingFonts.textLight};
-            font-size: 1.06rem;
-            letter-spacing: 0px;
-            padding-right: 50px;
-            transform: translate(-50px, 90px);
+            font-size: 1.1111vw;
+            padding-right: ${pxToVW.vw50px};
+            transform: translate(-${pxToVW.vw50px}, ${pxToVW.vw90px});
+            @media (max-width: ${breakpoints.laptopDesign}){
+                font-size: 1.06rem;
+                padding-right: 50px;
+                transform: translate(-50px, 90px);
+            }
             @media (max-width: ${breakpoints.mobileDesign}){
                 display: none;
             }
         }
 
         .title{
+            font-family: ${brandingFonts.display};
+            font-size: 7.6388vw;
             cursor: ${cursors.eyePointer};
             &:hover{
                 font-family: ${brandingFonts.displayItalic};
+            }
+            @media (max-width: ${breakpoints.laptopDesign}){
+                font-size: 7.3rem;
+            }
+            @media (max-width: ${breakpoints.mobileDesign}){
+                font-size: 4.7rem;
+                letter-spacing: 1px;
             }
         }
 
         .helperTextDesktop{
             position: absolute;
             font-family: ${brandingFonts.textLight};
-            font-size: 1.06rem;
-            letter-spacing: 0px;
-            transform: translate(50px, 20px);
+            font-size: 1.1111vw;
+            transform: translate(${pxToVW.vw50px}, ${pxToVW.vw20px});
+            @media (max-width: ${breakpoints.laptopDesign}){
+                font-size: 1.06rem;
+                transform: translate(50px, 20px);
+            }
             @media (max-width: ${breakpoints.mobileDesign}){
                 display: none;
             }

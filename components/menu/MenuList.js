@@ -5,7 +5,7 @@
     // -Custom Hooks
     import { useWidth } from '../../hooks/useWidth'
     // -Styles
-    import { breakpoints } from '../../styles/customStyles/globalStyles' 
+    
 // 
 
 

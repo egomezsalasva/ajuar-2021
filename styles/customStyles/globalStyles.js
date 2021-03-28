@@ -25,6 +25,8 @@ const breakpoints = {
 const pxToVW = {
     vw20px: "1.38888vw",
     vw30px: "2.083333vw",
+    vw50px: "3.472222vw",
+    vw90px: "6.24vw",
 
     vw220px: "15.2777vw",
 
