@@ -5,9 +5,6 @@
     import Menu from '../components/menu/Menu'
   // -Styles
     import '../styles/globals.css'
-    import { breakpoints } from '../styles/customStyles/globalStyles'
-  // -Custom Hooks
-    import { useWidth } from '../hooks/useWidth'
   // -Contexts
     import MenuContextProvider from '../contexts/menuContext'
 // 
