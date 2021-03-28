@@ -4,7 +4,8 @@ const brandingFonts = {
     displayItalic: 'Cako-RegularItalic',
     
     textLight: 'SuisseIntl-light',
-    textRegular: 'SuisseIntl',
+    textRegular: 'SuisseIntl-Regular',
+    textRegularItalic: 'SuisseIntl-RegularItalic',
 }
 
 const brandingColors = {
