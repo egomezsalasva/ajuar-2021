@@ -19,11 +19,11 @@
       <>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <link rel="preload" href="/fonts/cako/Cako-Regular.eot" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/cako/Cako-RegularItalic.eot" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/suisse/SuisseIntl-Light.eot" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/suisse/SuisseIntl.eot" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/suisse/SuisseIntl-RegularItalic.eot" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/cako/Cako-Regular.woff2" as="font" type="font/woff2" crossOrigin="" />
+          <link rel="preload" href="/fonts/cako/Cako-RegularItalic.woff2" as="font" type="font/woff2" crossOrigin="" />
+          <link rel="preload" href="/fonts/suisse/SuisseIntl-Light.woff2" as="font" type="font/woff2" crossOrigin="" />
+          <link rel="preload" href="/fonts/suisse/SuisseIntl.woff2" as="font" type="font/woff2" crossOrigin="" />
+          <link rel="preload" href="/fonts/suisse/SuisseIntl-RegularItalic.woff2" as="font" type="font/woff2" crossOrigin="" />
         </Head>
         <MenuContextProvider>
           <Menu />
