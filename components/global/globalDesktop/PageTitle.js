@@ -3,6 +3,7 @@
   import styled from 'styled-components'
   // -Styles
   import {brandingColors, brandingFonts} from '../../../styles/customStyles/brandingStyles'
+  import { pxToVW } from '../../../styles/customStyles/globalStyles'
 // 
 
 
@@ -15,8 +16,8 @@
     color: ${brandingColors.light};
     letter-spacing: -0.2px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: ${pxToVW.vw20px};
+    margin-bottom: 1.04166vw;
   `
 // 
 
