@@ -31,6 +31,7 @@
     text-justify: inter-word;
     @media (max-width: ${breakpoints.laptopDesign}){
       padding: 30px;
+      padding-bottom: 10px;
       font-size: 2.266rem;
     }
 
