@@ -52,6 +52,7 @@
         .supScript{
             font-family: ${brandingFonts.display};
             font-size: 2.083vw;
+            line-height: 3.5vw;
             vertical-align: text-top;
 
             @media (max-width: ${breakpoints.laptopDesign}) {
