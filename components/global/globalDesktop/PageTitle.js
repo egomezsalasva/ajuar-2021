@@ -19,7 +19,7 @@
     margin-top: ${pxToVW.vw20px};
     margin-bottom: 1.04166vw;
     @media (max-width: ${breakpoints.laptopDesign}) {
-      font-size: 7.3rem;
+      font-size: 7.6vw;
       margin-top: 20px;
       margin-bottom: 15px;
     }
