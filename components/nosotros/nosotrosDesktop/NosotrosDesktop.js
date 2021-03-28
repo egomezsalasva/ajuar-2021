@@ -5,9 +5,10 @@
     import PageTitle from '../../global/globalDesktop/PageTitle'
     import TextoImagen from './TextoImagen'
     import MenuButton from '../../global/MenuButton'
-    //import TextoImagen02 from './TextoImagen02'
   // -Styles
     import {brandingColors, brandingFonts} from '../../../styles/customStyles/brandingStyles'
+    import { breakpoints } from '../../../styles/customStyles/globalStyles'
+    import { pxToVW } from '../../../styles/customStyles/globalStyles'
 //
 
 // STYLES
@@ -20,22 +21,30 @@
     flex-wrap: wrap;
   `
   const TextNosotros = styled.div`
-    padding: 30px;
+    padding: ${pxToVW.vw30px};
     padding-bottom: 0px;
     font-family: ${brandingFonts.textRegular};
-    font-size: 34px;
+    font-size: 2.36111vw;
     line-height: 1.1;
     color: ${brandingColors.light};
     text-align: justify;
     text-justify: inter-word;
+    @media (max-width: ${breakpoints.laptopDesign}){
+      padding: 30px;
+      font-size: 2.266rem;
+    }
 
     .logo{
       font-family: ${brandingFonts.display};
-      font-size: 55px;
-      line-height: 55px;
+      font-size: 3.819444vw;
+      line-height: 1;
       letter-spacing: -0.8px;
       margin: 0;
-      margin-top: 4px;
+      margin-top: 0.2777vw;
+      @media (max-width: ${breakpoints.laptopDesign}){
+        margin-top: 4px;
+        font-size: 3.6666rem;
+      }
     }
   `
 //
