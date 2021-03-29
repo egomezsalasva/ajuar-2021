@@ -9,7 +9,8 @@
     import MenuList from './MenuList'
     // - Styles
     import { brandingColors } from '../../styles/customStyles/brandingStyles'
-    import { zIndexes } from '../../styles/customStyles/globalStyles'
+    import { breakpoints } from '../../styles/customStyles/globalStyles'
+    import { pxToVW, zIndexes } from '../../styles/customStyles/globalStyles'
     // -Context
     import { MenuContext } from '../../contexts/menuContext'
 // 
@@ -38,7 +39,10 @@
         position: absolute;
         bottom: 30px;
         left: 50%;
-        transform: translateX(-50%);   
+        transform: translateX(-50%);
+        @media (max-width: ${breakpoints.mobileDesign}){
+            bottom: ${pxToVW.vwM20px};
+        } 
     `   
 //
 

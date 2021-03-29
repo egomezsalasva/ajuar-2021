@@ -3,7 +3,7 @@
     import MenuOptionInternal from './MenuOptionInternal'
     import MenuOptionExternal from './MenuOptionExternal'
     // -Custom Hooks
-    import { useWidth } from '../../hooks/useWidth'
+
     // -Styles
     
 // 
@@ -12,8 +12,6 @@
 
 // MAIN COMPONENT
     export default function MenuList() {
-
-        const windowWidth = useWidth()
 
         return (
             <div>

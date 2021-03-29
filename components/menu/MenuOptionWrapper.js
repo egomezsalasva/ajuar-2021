@@ -40,7 +40,8 @@
                 font-size: 7.3rem;
             }
             @media (max-width: ${breakpoints.mobileDesign}){
-                font-size: 4.7rem;
+                //font-size: 4.7rem;
+                font-size: 16.9082vw;
                 letter-spacing: 1px;
             }
         }
@@ -64,7 +65,8 @@
                 display: block;
                 position: relative;
                 font-family: ${brandingFonts.textRegularItalic};
-                font-size: 1.06rem;
+                //font-size: 1.06rem;
+                font-size: 3.8647vw;
                 letter-spacing: 1px;
             }
         }

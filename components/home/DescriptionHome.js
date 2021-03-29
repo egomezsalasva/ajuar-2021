@@ -1,12 +1,13 @@
 // IMPORTS
     // - Modules
-    import styled from 'styled-components'
+        import styled from 'styled-components'
     // - Components
-    //import DescriptionGif from './DescriptionGif.js'
+    
     // - Styles
-    import { brandingColors, brandingFonts } from '../../styles/customStyles/brandingStyles'
-    import { breakpoints, pxToVW, pxToVH } from '../../styles/customStyles/globalStyles'
-    //import { description } from '../../styles/customStyles/homeStyles'
+        import { brandingColors, brandingFonts } from '../../styles/customStyles/brandingStyles'
+        import { breakpoints, pxToVW, pxToVH } from '../../styles/customStyles/globalStyles'
+    // - Custom Hooks
+        import { useWidth } from '../../hooks/useWidth'
 // 
 
 
@@ -78,7 +79,7 @@
 // MAIN COMPONENT
     export default function DescriptionHome() {
 
-
+        //const windowWidth = useWidth()
 
         return (
             <DescriptionContainer>
