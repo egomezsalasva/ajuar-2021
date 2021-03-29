@@ -25,13 +25,21 @@
         bottom: 0px;
         width: 100vw;
         height: 100vh;
-        transform: translateY(-100vh);
+        transform: translateY(-100%);
         z-index: ${zIndexes.menu};
         background: ${brandingColors.dark};
         justify-content: center;
         align-items: center;
         flex-wrap: wrap; 
     `
+    const Smiley = styled.img`
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);   
+    `   
 //
 
 
@@ -56,6 +64,7 @@
             <MenuContainer active={menuActive} ref={menuContainerRef}>
                 <Logo/>
                 <MenuList/>
+                <Smiley src="/assets/smiley.svg" alt="smiley ajuar"/>
             </MenuContainer>
         )
     }
