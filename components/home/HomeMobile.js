@@ -10,7 +10,6 @@
   import InstagramButton from '../global/globalMobile/InstagramButton'
   // -Styles
   import { breakpoints, pxToVW } from '../../styles/customStyles/globalStyles'
-  import { brandingColors } from '../../styles/customStyles/brandingStyles'
 //
 
 // MAIN COMPONENT
@@ -25,7 +24,7 @@
       max-width: calc(100vw - 30px - 30px - 220px);
     }
     @media (max-width: ${breakpoints.mobileDesign}) {
-      max-width: calc(100vw - ${pxToVW.vw30px} - ${pxToVW.vw30px});
+      max-width: calc(100vw - ${pxToVW.vwM20px} - ${pxToVW.vwM20px});
     }
   `
 //
