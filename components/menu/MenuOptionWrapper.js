@@ -43,6 +43,9 @@
                 //font-size: 4.7rem;
                 font-size: 16.9082vw;
                 letter-spacing: 1px;
+                &:hover{
+                    font-family: ${brandingFonts.displayItalic};
+                }
             }
         }
 
