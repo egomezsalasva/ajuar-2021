@@ -6,7 +6,7 @@
 
     // - Styles
         import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
-        import { cursors } from '../../../styles/customStyles/globalStyles'
+        import { cursors, pxToVW, breakpoints } from '../../../styles/customStyles/globalStyles'
 //
 
 
@@ -14,10 +14,14 @@
     const ContactInfoContainer = styled.div`
         font-family: ${brandingFonts.textRegular};
         text-align: center;
-        font-size: 30px;
+        font-size: 2.08333vw;
         color: ${brandingColors.light};
         letter-spacing: 1.5px;
-        margin-top: 30px;
+        margin-top: ${pxToVW.vw30px};
+        @media (max-width: ${breakpoints.laptopDesign}){
+            font-size: 2rem;
+            margin-top: 30px;
+        }
 
         a{
           cursor: ${cursors.eyePointer};
@@ -30,9 +34,13 @@
 
         .clipboardButton{
             font-family: ${brandingFonts.display};
-            font-size: 15px;
+            font-size: 1.04166vw;
             vertical-align: text-top;
-            line-height: 30px;
+            line-height: ${pxToVW.vw30px};
+            @media (max-width: ${breakpoints.laptopDesign}){
+                font-size: 1rem;
+                line-height: 30px;
+            }
         }
     `
 //

@@ -12,6 +12,8 @@
     import MenuButton from '../../global/MenuButton'
   // - Styles
     import { brandingColors } from '../../../styles/customStyles/brandingStyles'
+    import { breakpoints } from '../../../styles/customStyles/globalStyles'
+    import { pxToVW } from '../../../styles/customStyles/globalStyles'
   // -Context
     import { MenuContext } from '../../../contexts/menuContext'
 //
@@ -20,7 +22,10 @@
 // STYLES
     const FormContainer = styled.div`
       width: 100%;
-      padding: 30px;
+      padding: ${pxToVW.vw30px};
+      @media (max-width: ${breakpoints.laptopDesign}){
+        padding: 30px;
+      }
     `
 //
 
