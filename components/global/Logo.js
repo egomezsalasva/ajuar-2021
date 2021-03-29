@@ -21,7 +21,8 @@
       width: 251px;
     }
     @media (max-width: ${breakpoints.mobileDesign}) {
-      width: 183px;
+      //width: 183px;
+      width: 12.7083vw;
     }
   `
 //

@@ -31,6 +31,8 @@ const pxToVW = {
     vw60px: "4.166666vw",
     vw90px: "6.24vw",
 
+    vw120px: "8.3333vw",
+
     vw220px: "15.2777vw",
 
 }

@@ -9,7 +9,7 @@
   import MenuButton from '../global/MenuButton'
   import InstagramButton from '../global/globalMobile/InstagramButton'
   // -Styles
-  import { breakpoints } from '../../styles/customStyles/globalStyles'
+  import { breakpoints, pxToVW } from '../../styles/customStyles/globalStyles'
   import { brandingColors } from '../../styles/customStyles/brandingStyles'
 //
 
@@ -17,10 +17,15 @@
   const LogoBox = styled.div`
     width: 100%;
     height: 70px;
-    margin: 30px;
-    max-width: calc(100vw - 30px - 30px - 220px);
+    margin: ${pxToVW.vw30px};
+    max-width: calc(100vw - ${pxToVW.vw30px} - ${pxToVW.vw30px} - ${pxToVW.vw220px});
+    @media (max-width: ${breakpoints.laptopDesign}) {
+      height: 70px;
+      margin: 30px;
+      max-width: calc(100vw - 30px - 30px - 220px);
+    }
     @media (max-width: ${breakpoints.mobileDesign}) {
-      max-width: calc(100vw - 30px - 30px);
+      max-width: calc(100vw - ${pxToVW.vw30px} - ${pxToVW.vw30px});
     }
   `
 //

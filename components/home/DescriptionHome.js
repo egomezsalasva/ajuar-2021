@@ -19,8 +19,9 @@
             max-width: calc(100vw - 30px - 30px - 220px); //full screen - margins - menuContainerSize
         } 
         @media (max-width: ${breakpoints.mobileDesign}) {
-            margin: 30px 30px 120px;
-            max-width: calc(100vw - 30px - 30px);
+            //margin: 30px 30px 120px;
+            margin: ${pxToVW.vw30px} ${pxToVW.vw30px} ${pxToVW.vw120px};
+            max-width: calc(100vw - ${pxToVW.vw30px} - ${pxToVW.vw30px});
         }
     `
     const Line = styled.div`
@@ -36,7 +37,7 @@
         }
         @media (max-width: ${breakpoints.mobileDesign}) {
             font-size: 2.4rem;
-            line-height: 40px;
+            line-height: 1.1;
         }
 
         .emoji{
