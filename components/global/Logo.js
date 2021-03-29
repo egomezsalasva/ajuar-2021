@@ -22,7 +22,9 @@
     }
     @media (max-width: ${breakpoints.mobileDesign}) {
       //width: 183px;
-      width: 12.7083vw;
+      top: ${pxToVW.vwM20px};
+      left: ${pxToVW.vwM20px};
+      width: 44.2028vw;
     }
   `
 //

@@ -35,8 +35,20 @@ const pxToVW = {
 
     vw220px: "15.2777vw",
 
+    //MOBILE
+
+    vwM20px: "4.8309vw",
+
+}
+
+const pxToVH = {
+
+    //MOBILE
+
+    vhM120px: "13.4228vh",
+
 }
 
 
 
-export { zIndexes, cursors, breakpoints, pxToVW }
+export { zIndexes, cursors, breakpoints, pxToVW, pxToVH }

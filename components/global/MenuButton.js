@@ -31,7 +31,9 @@
       right: 30px;
     }
     @media (max-width: ${breakpoints.mobileDesign}) {
-      font-size: 2rem;
+      //font-size: 2rem;
+      bottom: ${pxToVW.vwM20px};
+      right: ${pxToVW.vwM20px};
       font-size: 7.25vw;
     }
   `

@@ -5,7 +5,7 @@
     //import DescriptionGif from './DescriptionGif.js'
     // - Styles
     import { brandingColors, brandingFonts } from '../../styles/customStyles/brandingStyles'
-    import { breakpoints, pxToVW } from '../../styles/customStyles/globalStyles'
+    import { breakpoints, pxToVW, pxToVH } from '../../styles/customStyles/globalStyles'
     //import { description } from '../../styles/customStyles/homeStyles'
 // 
 
@@ -20,8 +20,8 @@
         } 
         @media (max-width: ${breakpoints.mobileDesign}) {
             //margin: 30px 30px 120px;
-            margin: ${pxToVW.vw30px} ${pxToVW.vw30px} ${pxToVW.vw120px};
-            max-width: calc(100vw - ${pxToVW.vw30px} - ${pxToVW.vw30px});
+            margin: ${pxToVW.vwM20px} ${pxToVW.vwM20px} ${pxToVH.vhM120px};
+            max-width: calc(100vw - ${pxToVW.vwM20px} - ${pxToVW.vwM20px});
         }
     `
     const Line = styled.div`
@@ -36,7 +36,8 @@
             font-size: 2.4rem;
         }
         @media (max-width: ${breakpoints.mobileDesign}) {
-            font-size: 2.4rem;
+            //font-size: 2.4rem;
+            font-size: 8.6956vw;
             line-height: 1.1;
         }
 
@@ -47,6 +48,9 @@
             }
             @media (max-width: ${breakpoints.tabletDesign}) {
                 font-size: 2.1rem;
+            }
+            @media (max-width: ${breakpoints.mobileDesign}) {
+                font-size: 7.7294vw;
             }
         }
 
@@ -62,6 +66,10 @@
             @media (max-width: ${breakpoints.tabletDesign}) {
                 font-size: 1.2rem;
             }
+            @media (max-width: ${breakpoints.mobileDesign}) {
+                font-size: 4.1062vw;
+                line-height: 9.4vw;
+            }
         }
     `
 //
@@ -69,6 +77,9 @@
 
 // MAIN COMPONENT
     export default function DescriptionHome() {
+
+
+
         return (
             <DescriptionContainer>
                 <Line>
