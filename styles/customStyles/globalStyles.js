@@ -37,7 +37,10 @@ const pxToVW = {
 
     //MOBILE
 
+    vwM10px: "2.41545vw",
     vwM20px: "4.8309vw",
+    vwM30px: "7.24637vw",
+    vwM80px: "19.3236vw",
 
 }
 

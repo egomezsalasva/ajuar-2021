@@ -7,6 +7,7 @@
 
 // - Components
     import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
+import { pxToVW } from '../../../styles/customStyles/globalStyles'
 //
 
 
@@ -17,7 +18,7 @@
 
         .plus{
             position: absolute;
-            right:10px;
+            right: ${pxToVW.vwM10px};
             top: 30px;
             height: 20px;
             width: 20px;
@@ -40,16 +41,19 @@
 
         .accordionMenu{
             height: 85px;
-            padding: 10px; 
+            padding: ${pxToVW.vwM10px}; 
+            padding-top: 3.6231vw;
             border-top: 1px solid ${brandingColors.light};
             .title{
                 font-family: ${brandingFonts.display};
                 color: ${brandingColors.light};
-                font-size: 50px;
+                //font-size: 47px;
+                font-size: 10.7vw;
                 line-height: 1;
             }
             .emoji{
-                font-size: 35px;
+                //font-size: 35px;
+                font-size: 7.7vw;
                 line-height: 1;
             }
         }

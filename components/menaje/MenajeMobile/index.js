@@ -10,21 +10,22 @@
         import MenuButton from '../../global/MenuButton'
     // - Styles
         import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
+import { pxToVW } from '../../../styles/customStyles/globalStyles'
 //
 
 
 // STYLES
     const TextIntro = styled.div`
         color: ${brandingColors.light};
-        margin: 20px;
+        margin: ${pxToVW.vwM20px};
         font-family: ${brandingFonts.textRegular};
-        font-size: 19px;
-        line-height: 22px;
+        //font-size: 19px;
+        font-size: 4.5893vw;
+        line-height: 1.157;
         letter-spacing: -0.3px;
     `
     const AccordionContainer = styled.div`
-        margin: 0 20px 80px;
-        
+        margin: 0 ${pxToVW.vwM20px} ${pxToVW.vwM80px};
     `
 
 // 

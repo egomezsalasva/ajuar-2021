@@ -144,7 +144,7 @@ export default function ContactoMobile() {
         </Formik>
       </FormContainer>
 
-      <PageTitleMobile>Escribenos</PageTitleMobile>
+      <PageTitleMobile>Escríbenos</PageTitleMobile>
       <MenuButton />
     </>
   )

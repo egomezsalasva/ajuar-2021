@@ -16,13 +16,15 @@
 
     .title{
         font-family: ${brandingFonts.textLight};
-        font-size: 12px;
+        //font-size: 12px;
+        font-size: 2.8985vw;
         line-height: 1;
         margin-top: 10px;
     }
     .content{
       padding-top: 10px;
-      font-size: 18px;
+      //font-size: 18px;
+      font-size: 4.3478vw;
       line-height: 1.25;
     }
   `

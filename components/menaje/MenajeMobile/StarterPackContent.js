@@ -8,10 +8,6 @@
 //
 
 
-// STYLES
-
-//
-
 
 // MAIN COMPONENT
   export default function StarterPackContent() {
