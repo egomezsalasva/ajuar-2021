@@ -5,27 +5,21 @@
   import Container from '../global/Container'
   import HomeWrapper from './HomeWrapper'
   import Logo from '../global/Logo'
-  import DescriptionHome from './DescriptionHome'
+  import DescriptionMobile from './DescriptionMobile'
   import MenuButton from '../global/MenuButton'
   import InstagramButton from '../global/globalMobile/InstagramButton'
   // -Styles
-  import { breakpoints, pxToVW } from '../../styles/customStyles/globalStyles'
+  import { pxToVW } from '../../styles/customStyles/globalStyles'
 //
 
 // MAIN COMPONENT
   const LogoBox = styled.div`
+    position: absolute;
+    top: ${pxToVW.vwM20px};
+    left: ${pxToVW.vwM20px};
     width: 100%;
     height: 70px;
-    margin: ${pxToVW.vw30px};
-    max-width: calc(100vw - ${pxToVW.vw30px} - ${pxToVW.vw30px} - ${pxToVW.vw220px});
-    @media (max-width: ${breakpoints.laptopDesign}) {
-      height: 70px;
-      margin: 30px;
-      max-width: calc(100vw - 30px - 30px - 220px);
-    }
-    @media (max-width: ${breakpoints.mobileDesign}) {
-      max-width: calc(100vw - ${pxToVW.vwM20px} - ${pxToVW.vwM20px});
-    }
+    max-width: calc(100vw - ${pxToVW.vwM20px} - ${pxToVW.vwM20px});
   `
 //
 
@@ -37,7 +31,7 @@
             <HomeWrapper>
                 <Logo />
                 <LogoBox/>
-                <DescriptionHome />
+                <DescriptionMobile />
             </HomeWrapper>
             <MenuButton />
             <InstagramButton />

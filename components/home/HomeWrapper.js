@@ -2,7 +2,7 @@
   // -Modules
   import styled from 'styled-components'
   // -Styles
-  // import { breakpoints } from '../../styles/customStyles/globalStyles'
+   import { breakpoints, pxToVH } from '../../styles/customStyles/globalStyles'
 //
 
 // STYLES
@@ -13,6 +13,9 @@
     align-items: left;
     justify-content: space-between;
     flex-direction: column;
+    @media (max-width: ${breakpoints.mobileDesign}) {
+        display: block;
+    }
   `
 //
 
