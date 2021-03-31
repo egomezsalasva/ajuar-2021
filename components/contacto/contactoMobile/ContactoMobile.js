@@ -8,20 +8,22 @@
     import MenuButton from '../../global/MenuButton'
   // - Styles
     import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
-    import { cursors } from '../../../styles/customStyles/globalStyles'
+    import { cursors, pxToVH, pxToVW } from '../../../styles/customStyles/globalStyles'
 //
 
 
 // STYLES
   const FormContainer = styled.div`
-    padding: 20px;
-    margin: 20px;
-    margin-bottom: 80px;
+    padding: ${pxToVW.vwM20px};
+    margin: ${pxToVW.vwM20px};
+    margin-bottom: ${pxToVW.vwM80px};
     background: ${brandingColors.light};
   `
 
-  const lnHeight = "46px"
-  const fntSize = "26px"
+  //const lnHeight = "46px"
+  const lnHeight = "5.13392857vh"
+  //const fntSize = "26px"
+  const fntSize = "6.28019324vw"
   const FieldLabelContainer = styled.div`
     margin-top: ${props => props.inputMarginTop || "0px"};
     position: relative;
@@ -40,7 +42,8 @@
     .fieldInput{
         position: absolute;
         z-index: 10;
-        top: 37px;
+        //top: 37px;
+        top: 4.12946429vh;
         width: 100%;
         background: transparent;
         font-size: ${fntSize};
@@ -63,7 +66,8 @@
   `
   const BackgroundBox = styled.div`
     position: absolute;
-    top: 35px;
+    //top: 35px;
+    top: 3.90625vh;
     z-index: 0;
     width: 100%;
     height: calc(${lnHeight} * ${props => props.numberOfLines || "1"});
@@ -76,7 +80,7 @@
   `
   const ButtonContainer = styled.div`
     width: 100%;
-    margin: 40px 0;
+    margin: 4.46428571vh 0;
     text-align: center;
 
     button{

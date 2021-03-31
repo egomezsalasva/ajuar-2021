@@ -5,6 +5,7 @@
     
     // - Styles
         import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
+import { pxToVW } from '../../../styles/customStyles/globalStyles'
 //
 
 
@@ -15,9 +16,9 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        margin: 20px;
+        margin: ${pxToVW.vwM20px};
         font-family: ${brandingFonts.textRegular};
-        font-size: 22px;
+        font-size: 5.314009vw;
         letter-spacing: 0.3px;
         line-height: 1.2;
     `
