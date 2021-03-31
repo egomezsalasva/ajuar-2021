@@ -22,6 +22,7 @@
           <link rel="preload" href="/fonts/suisse/SuisseIntl.woff2" as="font" type="font/woff2" crossOrigin="" />
           <link rel="preload" href="/fonts/suisse/SuisseIntl-RegularItalic.woff2" as="font" type="font/woff2" crossOrigin="" />
         </Head>
+        
         <MenuContextProvider>
           <Menu />
           <Component {...pageProps} />

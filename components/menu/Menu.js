@@ -1,5 +1,6 @@
 // IMPORTS
     // - Modules
+    import Head from 'next/head'
     import styled from 'styled-components'
     import { useRouter } from 'next/router'
     import { useContext, useEffect } from 'react'
@@ -65,11 +66,20 @@
 
 
         return (
-            <MenuContainer active={menuActive} ref={menuContainerRef}>
-                <Logo/>
-                <MenuList/>
-                <Smiley src="/assets/smiley.svg" alt="smiley ajuar"/>
-            </MenuContainer>
+            <>
+                <Head>
+                    <link rel="preload" href="/fonts/cako/Cako-Regular.woff2" as="font" type="font/woff2" crossOrigin="" />
+                    <link rel="preload" href="/fonts/cako/Cako-RegularItalic.woff2" as="font" type="font/woff2" crossOrigin="" />
+                    <link rel="preload" href="/fonts/suisse/SuisseIntl-Light.woff2" as="font" type="font/woff2" crossOrigin="" />
+                    <link rel="preload" href="/fonts/suisse/SuisseIntl.woff2" as="font" type="font/woff2" crossOrigin="" />
+                    <link rel="preload" href="/fonts/suisse/SuisseIntl-RegularItalic.woff2" as="font" type="font/woff2" crossOrigin="" />
+                </Head>
+                <MenuContainer active={menuActive} ref={menuContainerRef}>
+                    <Logo/>
+                    <MenuList/>
+                    <Smiley src="/assets/smiley.svg" alt="smiley ajuar"/>
+                </MenuContainer>
+            </>
         )
     }
 //
