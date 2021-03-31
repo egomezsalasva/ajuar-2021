@@ -6,6 +6,7 @@
     import MenuButton from '../../global/MenuButton'
   // -Styles
     import {brandingColors, brandingFonts} from '../../../styles/customStyles/brandingStyles'
+import { pxToVW } from '../../../styles/customStyles/globalStyles'
 //
 
 // STYLES
@@ -18,16 +19,18 @@
     flex-wrap: wrap;
   `
   const TextNosotros = styled.div`
-    padding: 20px;
-    padding-bottom: 80px;
+    padding: ${pxToVW.vwM20px};
+    padding-bottom: ${pxToVW.vwM80px};
     font-family: ${brandingFonts.textRegular};
-    font-size: 19px;
-    line-height: 1.2;
+    //font-size: 19px;
+    font-size: 4.5893vw;
+    line-height: 1.105;
     color: ${brandingColors.light};
 
     .logo{
       font-family: ${brandingFonts.display};
-      font-size: 43px;
+      //font-size: 43px;
+      font-size: 10.3864vw;
       line-height: 1;
       letter-spacing: -0.8px;
       margin: 0;
