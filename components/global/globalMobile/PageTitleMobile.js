@@ -14,7 +14,7 @@
     font-family: ${brandingFonts.display};
     font-size: 47px;
     color: ${brandingColors.light};
-    letter-spacing: 1px;
+    letter-spacing: -0.4px;
   `
 // 
 
