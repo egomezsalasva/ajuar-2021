@@ -41,8 +41,10 @@ import { pxToVW } from '../../../styles/customStyles/globalStyles'
 
         .accordionMenu{
             height: 85px;
-            padding: ${pxToVW.vwM10px}; 
-            padding-top: 3.6231vw;
+            padding: ${pxToVW.vwM10px} 0; 
+            //padding-top: 3.6231vw;
+            //padding-top: 2.23214vh;
+            padding-top: 2.3vh;
             border-top: 1px solid ${brandingColors.light};
             .title{
                 font-family: ${brandingFonts.display};
@@ -63,8 +65,9 @@ import { pxToVW } from '../../../styles/customStyles/globalStyles'
         text-align: center;
         overflow: hidden;
         height: 0;
+        padding: 0 ${pxToVW.vwM10px};
         p{
-            padding: 20px 35px;
+            //padding: 20px 35px;
         }
     `
 // 
