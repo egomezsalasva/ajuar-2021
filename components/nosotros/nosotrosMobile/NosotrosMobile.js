@@ -29,6 +29,8 @@
     font-size: 4.5893vw;
     line-height: 1.105;
     color: ${brandingColors.light};
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
 
     .logo{
       font-family: ${brandingFonts.display};
