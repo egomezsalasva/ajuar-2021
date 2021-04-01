@@ -1,10 +1,6 @@
 // IMPORTS
     // -Modules
-    import { useEffect, useRef, useState } from 'react'
     import styled from 'styled-components'
-    //import Hammer from "hammerjs"
-    //import Hammer from "hammerjs"
-    var Hammer = require('react-hammerjs')
 // -Styles
     import { cursors } from '../../../styles/customStyles/globalStyles'
 // 

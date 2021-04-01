@@ -1,6 +1,6 @@
 // IMPORTS
   // -Modules
-    import { useEffect, useRef, useState } from 'react'
+    import { useState } from 'react'
     import styled from 'styled-components'
     
   // -Components
