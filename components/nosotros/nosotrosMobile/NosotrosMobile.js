@@ -43,11 +43,12 @@
     }
   `
   const ImageBox = styled.div`
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    width: 300px;
-    height: 450px;
+    width: 80vw;
+    height: 67.46626vh;
+    max-height: 450px;
     background: ${props => props.imgProp || "none"};
     background-position: center;
     background-repeat: no-repeat;
