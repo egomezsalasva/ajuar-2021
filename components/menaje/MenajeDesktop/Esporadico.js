@@ -21,7 +21,7 @@
             <div className="content">
 
               <div className="contentLine">
-                Pack de Contenidos Audiovisuales<br/> 
+                Pack de contenidos audiovisuales<br/> 
                 <span>(Fotografías y vídeos propios personalizados)</span>
               </div>
 
@@ -32,9 +32,9 @@
                 <span>(Diseño gráfico digital, ilustraciones personalizadas y Motion Design)</span>
               </div> 
 
-              <div className="contentLine">Back ups y Entrega Directa de Material</div> 
+              <div className="contentLine">Back ups y entrega directa de material</div> 
 
-              <div className="contentLine">TikTok y IG reels</div>
+              <div className="contentLine">TikTok y IG Reels</div>
               
             </div>
 

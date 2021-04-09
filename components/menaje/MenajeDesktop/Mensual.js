@@ -19,7 +19,7 @@
           <div className="content">
 
             <div className="contentLine">
-              Pack de Contenidos Audiovisuales Mensual<br/>
+              Pack de contenidos audiovisuales mensual<br/>
               <span>(Fotografías y vídeos propios personalizados)</span>
             </div> 
 
@@ -31,14 +31,14 @@
             </div>
             
             <div className="contentLine">Contenidos para IGTV,  Reels y Tik Tok</div>
-            <div className="contentLine">Textos para Blog optimizados para SEO</div>
+            <div className="contentLine">Textos para blog optimizados para SEO</div>
             <div className="contentLine">Copys creativos para redes sociales</div>
             <div className="contentLine">Traducción de copywriting en inglés u otros idiomas</div>
-            <div className="contentLine">Entrega de Plan de contenidos Mensual</div>
-            <div className="contentLine">Entrega de KPI’S Mensual</div>
+            <div className="contentLine">Entrega de plan de contenidos mensual</div>
+            <div className="contentLine">Entrega de KPI’S mensual</div>
             <div className="contentLine">Servicio Community Manager y gestión de redes sociales</div>
-            <div className="contentLine">Servicio de Facebook Ads y Marketing Digital</div>
-            <div className="contentLine">Back ups y Entrega Directa de Material</div>
+            <div className="contentLine">Servicio de Facebook Ads y marketing digital</div>
+            <div className="contentLine">Back ups y entrega directa de material</div>
           </div>
           <div className="postData">* Esta es una propuesta completa de nuestros servicios, pero puede modificarse de forma personalizada.</div>
         </TextContainer>
