@@ -79,9 +79,9 @@
         let starterPackTitleRef = useRef()
 
         const helperTexts = {
-            mensual: "Mensual text",
-            esporadico: "esporadico",
-            starterPack: "starterPack",
+            mensual: "Pack de contenidos realizado mensualmente con planificación y estrategia en Social Media.",
+            esporadico: "Pack de contenidos para campañas o momentos puntuales.",
+            starterPack: "Creamos la imagen de tu marca desde cero o la renovamos para mejorar tu presencia en Instagram.",
         }
 
         const setHelperText = (helperTextArg) => {
