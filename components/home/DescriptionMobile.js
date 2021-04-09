@@ -48,7 +48,7 @@
                     SOMOS AJUAR <span className="supScript">(AJUAR)</span>,
                     EL MENAJE DIGITAL <span className="emoji">🤳🏽</span> MULTIDISCIPLINAR
                     QUE NECESITA TU PROYECTO <span className="emoji">🏡 </span>
-                    PARA EL SI <span className="emoji">💍</span> QUIERO DE TU CLIENTE <span className="supScript">(AMOR)</span>.
+                    PARA EL "SÍ <span className="emoji">💍</span> QUIERO" DE TU CLIENTE <span className="supScript">(AMOR)</span>.
                 </Line>
             </DescriptionContainer>
         )
