@@ -121,7 +121,7 @@
 
 
         return (
-            <Form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true">
                 
                 <input type="hidden" name="form-name" value="contact" />
 
@@ -138,7 +138,7 @@
                     </BackgroundBox>
 
                     <label htmlFor="message">Querido Ajuar, </label>
-                    <Field id="message" name="message" component="textarea" placeholder="Texto aquí..." className="fieldInput messageInput"/>
+                    <input id="message" name="message" component="textarea" placeholder="Texto aquí..." className="fieldInput messageInput"/>
 
                 </FieldLabelContainer>
 
@@ -151,7 +151,7 @@
                     </BackgroundBox>
                     
                     <label htmlFor="email">Con amor, </label>
-                    <Field name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
+                    <input name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
 
                 </FieldLabelContainer>
 
@@ -162,7 +162,7 @@
                 </ButtonContainer>
 
 
-            </Form>
+            </form>
         )
     }
 // 

@@ -1,7 +1,7 @@
 // IMPORTS
   // - Modules
     import styled from 'styled-components'
-    import { Formik, Form, Field } from 'formik'
+    //import { Formik, Form, Field } from 'formik'
   // - Component
     import PageTitleMobile from '../../global/globalMobile/PageTitleMobile'
     import ContactInfo from './ContactInfo'
@@ -106,7 +106,7 @@ export default function ContactoMobile() {
       <ContactInfo />
 
       <FormContainer>
-        <Formik
+        {/* <Formik
           initialValues={{ message: '', email: '', }}
           onSubmit={(values, actions) => { 
             alert(JSON.stringify(values, null, 2));
@@ -145,7 +145,37 @@ export default function ContactoMobile() {
 
             </Form>
           )}
-        </Formik>
+        </Formik> */}
+        <form name="contact" method="POST" data-netlify="true">
+
+              <FieldLabelContainer numberOfLines={5} inputMarginTop={"0px"}>
+                <BackgroundBox numberOfLines={5}>
+                  <BackgroundLine />
+                  <BackgroundLine />
+                  <BackgroundLine />
+                  <BackgroundLine />
+                  <BackgroundLine />
+                </BackgroundBox>
+                <label htmlFor="message">Querido Ajuar, </label>
+                <input name="message" component="textarea" placeholder="Texto aquí..." className="fieldInput messageInput"/>
+              </FieldLabelContainer>
+
+
+              <FieldLabelContainer numberOfLines={1} inputMarginTop={"30px"}>
+                <BackgroundBox numberOfLines={1}>
+                  <BackgroundLine />
+                </BackgroundBox>
+                <label htmlFor="email">Con amor, </label>
+                <input name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
+              </FieldLabelContainer>
+
+          
+              <ButtonContainer>
+                <button type="submit">💖🕊 <span>Mandar</span> 🕊💖</button>
+              </ButtonContainer>
+
+
+            </form>
       </FormContainer>
 
       <PageTitleMobile>Escríbenos</PageTitleMobile>

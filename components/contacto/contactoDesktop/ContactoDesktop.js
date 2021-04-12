@@ -2,7 +2,7 @@
   // - Modules
     import { useContext } from 'react'
     import styled from 'styled-components'
-    import { Formik } from 'formik'
+    //import { Formik } from 'formik'
   // - Components
     import SplitPageLayout from '../../global/globalDesktop/SplitPageLayout'
     import SplitLeft from '../../global/globalDesktop/SplitLeft'
@@ -43,11 +43,11 @@ export default function ContactoDesktop() {
     }
   }
 
-  const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //       .join("&");
+  // }
 
   return (
     <>
@@ -60,7 +60,7 @@ export default function ContactoDesktop() {
 
         <SplitRight rightBackgroundColor={brandingColors.light}>
           <FormContainer>
-            <Formik
+            {/* <Formik
 
               initialValues={{ message: '', email: '' }}
 
@@ -79,7 +79,8 @@ export default function ContactoDesktop() {
 
             >
               {() => (<ContactForm />)}
-            </Formik>
+            </Formik> */}
+            <ContactForm />
           </FormContainer>
         </SplitRight>
 
