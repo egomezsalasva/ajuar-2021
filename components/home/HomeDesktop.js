@@ -25,16 +25,20 @@
 //
 
 // MAIN COMPONENT
-  export default function HomeDesktop() {
+  const HomeDesktop = () => {
     return (
-        <Container>
-            <HomeWrapper>
-              <Logo />
-              <LogoBox/>
-              <DescriptionHome />
-            </HomeWrapper>
-            <MenuButton />
-        </Container>
+      <Container>
+
+        <HomeWrapper>
+          <Logo />
+          <LogoBox/>
+          <DescriptionHome />
+        </HomeWrapper>
+
+        <MenuButton inputColorProp={brandingColors.light}/>
+          
+      </Container>
     )
   }
+  export default HomeDesktop
 //
