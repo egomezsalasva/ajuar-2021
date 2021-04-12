@@ -11,7 +11,7 @@
 //
 
 
-// STYLES
+// STYLES 
     const deskLnHeight = "6.75vh"
     const lnHeight = "54px"
 
@@ -119,9 +119,9 @@
 // MAIN COMPONENT
     export default function ContactForm() {
 
+
         return (
             <Form name="contact" method="POST" data-netlify="true">
-
 
                 <FieldLabelContainer numberOfLines={7} inputMarginTop={"0px"}>
 
@@ -136,7 +136,7 @@
                     </BackgroundBox>
 
                     <label htmlFor="message">Querido Ajuar, </label>
-                    <Field name="message" component="textarea" placeholder="Texto aquí..." className="fieldInput messageInput"/>
+                    <Field id="message" name="message" component="textarea" placeholder="Texto aquí..." className="fieldInput messageInput"/>
 
                 </FieldLabelContainer>
 
