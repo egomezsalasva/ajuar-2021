@@ -148,34 +148,36 @@ export default function ContactoMobile() {
         </Formik> */}
         <form name="contact" method="POST" data-netlify="true">
 
-              <FieldLabelContainer numberOfLines={5} inputMarginTop={"0px"}>
-                <BackgroundBox numberOfLines={5}>
-                  <BackgroundLine />
-                  <BackgroundLine />
-                  <BackgroundLine />
-                  <BackgroundLine />
-                  <BackgroundLine />
-                </BackgroundBox>
-                <label htmlFor="message">Querido Ajuar, </label>
-                <input name="message" component="textarea" placeholder="Texto aquí..." className="fieldInput messageInput"/>
-              </FieldLabelContainer>
+          <input type="hidden" name="form-name" value="contact" />
+
+          <FieldLabelContainer numberOfLines={5} inputMarginTop={"0px"}>
+            <BackgroundBox numberOfLines={5}>
+              <BackgroundLine />
+              <BackgroundLine />
+              <BackgroundLine />
+              <BackgroundLine />
+              <BackgroundLine />
+            </BackgroundBox>
+            <label htmlFor="message">Querido Ajuar, </label>
+            <textarea name="message" placeholder="Texto aquí..." className="fieldInput messageInput"/>
+          </FieldLabelContainer>
 
 
-              <FieldLabelContainer numberOfLines={1} inputMarginTop={"30px"}>
-                <BackgroundBox numberOfLines={1}>
-                  <BackgroundLine />
-                </BackgroundBox>
-                <label htmlFor="email">Con amor, </label>
-                <input name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
-              </FieldLabelContainer>
+          <FieldLabelContainer numberOfLines={1} inputMarginTop={"30px"}>
+            <BackgroundBox numberOfLines={1}>
+              <BackgroundLine />
+            </BackgroundBox>
+            <label htmlFor="email">Con amor, </label>
+            <input type="email" name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
+          </FieldLabelContainer>
 
-          
-              <ButtonContainer>
-                <button type="submit">💖🕊 <span>Mandar</span> 🕊💖</button>
-              </ButtonContainer>
+      
+          <ButtonContainer>
+            <button type="submit">💖🕊 <span>Mandar</span> 🕊💖</button>
+          </ButtonContainer>
 
 
-            </form>
+        </form>
       </FormContainer>
 
       <PageTitleMobile>Escríbenos</PageTitleMobile>
