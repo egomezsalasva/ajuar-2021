@@ -10,7 +10,7 @@
 
 // STYLES
   const LogoImg = styled.img`
-    position: absolute;
+    position: fixed;
     top: ${pxToVW.vw30px};
     left: ${pxToVW.vw30px};
     width: 17.43vw;
