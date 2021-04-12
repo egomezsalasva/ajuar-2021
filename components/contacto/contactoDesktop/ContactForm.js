@@ -1,7 +1,6 @@
 // IMPORTS
     // - Modules
         import styled from 'styled-components'
-        import { Form, Field } from 'formik'
     // - Components
 
     // - Styles
@@ -118,8 +117,6 @@
 
 // MAIN COMPONENT
     export default function ContactForm() {
-
-
         return (
             <form name="contact" method="POST" data-netlify="true">
                 

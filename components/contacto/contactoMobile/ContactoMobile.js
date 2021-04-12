@@ -106,49 +106,9 @@ export default function ContactoMobile() {
       <ContactInfo />
 
       <FormContainer>
-        {/* <Formik
-          initialValues={{ message: '', email: '', }}
-          onSubmit={(values, actions) => { 
-            alert(JSON.stringify(values, null, 2));
-            actions.setSubmitting(false);
-          }}
-        >
-          {() => (
-            <Form name="contact" method="POST" data-netlify="true">
+        <form name="contact-mobile" method="POST" data-netlify="true">
 
-              <FieldLabelContainer numberOfLines={5} inputMarginTop={"0px"}>
-                <BackgroundBox numberOfLines={5}>
-                  <BackgroundLine />
-                  <BackgroundLine />
-                  <BackgroundLine />
-                  <BackgroundLine />
-                  <BackgroundLine />
-                </BackgroundBox>
-                <label htmlFor="message">Querido Ajuar, </label>
-                <Field name="message" component="textarea" placeholder="Texto aquí..." className="fieldInput messageInput"/>
-              </FieldLabelContainer>
-
-
-              <FieldLabelContainer numberOfLines={1} inputMarginTop={"30px"}>
-                <BackgroundBox numberOfLines={1}>
-                  <BackgroundLine />
-                </BackgroundBox>
-                <label htmlFor="email">Con amor, </label>
-                <Field name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
-              </FieldLabelContainer>
-
-          
-              <ButtonContainer>
-                <button type="submit">💖🕊 <span>Mandar</span> 🕊💖</button>
-              </ButtonContainer>
-
-
-            </Form>
-          )}
-        </Formik> */}
-        <form name="contact" method="POST" data-netlify="true">
-
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact-mobile" />
 
           <FieldLabelContainer numberOfLines={5} inputMarginTop={"0px"}>
             <BackgroundBox numberOfLines={5}>
@@ -159,7 +119,7 @@ export default function ContactoMobile() {
               <BackgroundLine />
             </BackgroundBox>
             <label htmlFor="message">Querido Ajuar, </label>
-            <textarea name="message" placeholder="Texto aquí..." className="fieldInput messageInput"/>
+            <textarea id="message" name="message" placeholder="Texto aquí..." className="fieldInput messageInput"/>
           </FieldLabelContainer>
 
 
@@ -168,7 +128,7 @@ export default function ContactoMobile() {
               <BackgroundLine />
             </BackgroundBox>
             <label htmlFor="email">Con amor, </label>
-            <input type="email" name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
+            <input type="email" id="email" name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
           </FieldLabelContainer>
 
       

@@ -2,7 +2,6 @@
   // - Modules
     import { useContext } from 'react'
     import styled from 'styled-components'
-    //import { Formik } from 'formik'
   // - Components
     import SplitPageLayout from '../../global/globalDesktop/SplitPageLayout'
     import SplitLeft from '../../global/globalDesktop/SplitLeft'
@@ -43,12 +42,6 @@ export default function ContactoDesktop() {
     }
   }
 
-  // const encode = (data) => {
-  //   return Object.keys(data)
-  //       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-  //       .join("&");
-  // }
-
   return (
     <>
       <SplitPageLayout>
@@ -60,26 +53,6 @@ export default function ContactoDesktop() {
 
         <SplitRight rightBackgroundColor={brandingColors.light}>
           <FormContainer>
-            {/* <Formik
-
-              initialValues={{ message: '', email: '' }}
-
-              onSubmit={(values, actions) => { 
-                fetch("/", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                  body: encode({ "form-name": "contact", ...values })
-                })
-                .then(() => {
-                  alert("Success!")
-                  actions.resetForm()
-                })
-                .catch(error => alert(error))
-              }}
-
-            >
-              {() => (<ContactForm />)}
-            </Formik> */}
             <ContactForm />
           </FormContainer>
         </SplitRight>
