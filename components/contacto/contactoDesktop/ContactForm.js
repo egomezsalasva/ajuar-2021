@@ -138,7 +138,7 @@
                     </BackgroundBox>
 
                     <label htmlFor="message">Querido Ajuar, </label>
-                    <input id="message" name="message" component="textarea" placeholder="Texto aquí..." className="fieldInput messageInput"/>
+                    <textarea id="message" name="message" placeholder="Texto aquí..." className="fieldInput messageInput"/>
 
                 </FieldLabelContainer>
 
@@ -151,7 +151,7 @@
                     </BackgroundBox>
                     
                     <label htmlFor="email">Con amor, </label>
-                    <input name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
+                    <input type="email" name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
 
                 </FieldLabelContainer>
 
