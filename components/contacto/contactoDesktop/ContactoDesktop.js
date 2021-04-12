@@ -77,6 +77,7 @@ export default function ContactoDesktop() {
               // validate={validate}
 
               onSubmit={(values, actions) => { 
+               
                 actions.resetForm()
               }}
 
