@@ -43,7 +43,11 @@ export default function ContactoDesktop() {
     }
   }
 
-  
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
   return (
     <>
@@ -61,8 +65,16 @@ export default function ContactoDesktop() {
               initialValues={{ message: '', email: '' }}
 
               onSubmit={(values, actions) => { 
-                actions.setSubmitting(true)
-                actions.resetForm()
+                fetch("/", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                  body: encode({ "form-name": "contact", ...values })
+                })
+                .then(() => {
+                  alert("Success!")
+                  actions.resetForm()
+                })
+                .catch(error => alert(error))
               }}
 
             >
