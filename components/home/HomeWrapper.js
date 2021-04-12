@@ -15,6 +15,7 @@
     flex-direction: column;
     @media (max-width: ${breakpoints.mobileDesign}) {
         display: block;
+        max-height: 100vh;
     }
   `
 //
