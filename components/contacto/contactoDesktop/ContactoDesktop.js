@@ -43,21 +43,7 @@ export default function ContactoDesktop() {
     }
   }
 
-  // const validate = values => {
-  //   let errors = {}
-
-  //   if(!values.message){
-  //     errors.message = "El menasaje esta vacio. Por favor introducir texto."
-  //   }
-
-  //   if(!values.email){
-  //       errors.email = "Por favor introducir un email valido."
-  //   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)){
-  //       errors.email = "Por favor introducir un email valido."
-  //   }
-
-  //   return errors
-  // }
+  
 
   return (
     <>
@@ -74,10 +60,8 @@ export default function ContactoDesktop() {
 
               initialValues={{ message: '', email: '' }}
 
-              // validate={validate}
-
               onSubmit={(values, actions) => { 
-               
+                actions.setSubmitting(true)
                 actions.resetForm()
               }}
 
