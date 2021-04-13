@@ -118,9 +118,9 @@
 // MAIN COMPONENT
     export default function ContactForm() {
         return (
-            <form name="contact" action="/success" method="POST" data-netlify="true">
+            <form name="contacto" action="/success" method="POST" data-netlify="true">
 
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="contacto" />
 
                 <p>
                 <label htmlFor="yourmessage">Message:</label> 
