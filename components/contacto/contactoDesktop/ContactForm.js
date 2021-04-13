@@ -118,9 +118,9 @@
 // MAIN COMPONENT
     export default function ContactForm() {
         return (
-            <form name="contact" action="/contacto" method="POST" data-netlify="true">
+            <form name="contacto" action="/success" method="POST" data-netlify="true">
                 
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="contacto" />
 
                 <FieldLabelContainer numberOfLines={7} inputMarginTop={"0px"}>
 
@@ -148,7 +148,7 @@
                     </BackgroundBox>
                     
                     <label htmlFor="email">Con amor, </label>
-                    <input type="email" name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
+                    <input id="email" type="email" name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
 
                 </FieldLabelContainer>
 
