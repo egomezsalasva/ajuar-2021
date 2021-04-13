@@ -118,7 +118,7 @@
 // MAIN COMPONENT
     export default function ContactForm() {
         return (
-            <form name="contacto" action="/contacto" method="POST" data-netlify="true">
+            <form name="contacto" action="/success" method="POST" data-netlify="true">
                 
                 <input type="hidden" name="form-name" value="contacto" />
 
