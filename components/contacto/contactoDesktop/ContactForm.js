@@ -118,27 +118,46 @@
 // MAIN COMPONENT
     export default function ContactForm() {
         return (
-            <form name="contacto" action="/success" method="POST" data-netlify="true">
+            <form name="contact" action="/contacto" method="POST" data-netlify="true">
+                
+                <input type="hidden" name="form-name" value="contact" />
 
-                <input type="hidden" name="form-name" value="contacto" />
+                <FieldLabelContainer numberOfLines={7} inputMarginTop={"0px"}>
 
-                <p>
-                <label htmlFor="yourmessage">Message:</label> 
-                <br />
-                <textarea name="message" id="yourmessage" className="message"/>
-                </p>
+                    <BackgroundBox numberOfLines={7}>
+                        <BackgroundLine />
+                        <BackgroundLine />
+                        <BackgroundLine />
+                        <BackgroundLine />
+                        <BackgroundLine />
+                        <BackgroundLine />
+                        <BackgroundLine />
+                    </BackgroundBox>
+
+                    <label htmlFor="message">Querido Ajuar, </label>
+                    <textarea id="message" name="message" placeholder="Texto aquí..." className="fieldInput messageInput"/>
+
+                </FieldLabelContainer>
 
 
-                <p>
-                <label htmlFor="youremail">Your Email:</label> 
-                <br />
-                <input type="email" name="email" id="youremail" className="email"/>
-                </p>
+
+                <FieldLabelContainer numberOfLines={1} inputMarginTop={"30px"}>
+
+                    <BackgroundBox numberOfLines={1}>
+                        <BackgroundLine />
+                    </BackgroundBox>
+                    
+                    <label htmlFor="email">Con amor, </label>
+                    <input type="email" name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
+
+                </FieldLabelContainer>
 
 
-                <p>
-                <button type="submit">Send</button>
-                </p>
+
+                <ButtonContainer>
+                    <button type="submit">💖🕊 <span>Mandar</span> 🕊💖</button>
+                </ButtonContainer>
+
 
             </form>
         )
@@ -148,45 +167,3 @@
 
 
 
-// <form name="contact" method="POST" data-netlify="true">
-                
-//     <input type="hidden" name="form-name" value="contact" />
-
-//     <FieldLabelContainer numberOfLines={7} inputMarginTop={"0px"}>
-
-//         <BackgroundBox numberOfLines={7}>
-//             <BackgroundLine />
-//             <BackgroundLine />
-//             <BackgroundLine />
-//             <BackgroundLine />
-//             <BackgroundLine />
-//             <BackgroundLine />
-//             <BackgroundLine />
-//         </BackgroundBox>
-
-//         <label htmlFor="message">Querido Ajuar, </label>
-//         <textarea id="message" name="message" placeholder="Texto aquí..." className="fieldInput messageInput"/>
-
-//     </FieldLabelContainer>
-
-
-
-//     <FieldLabelContainer numberOfLines={1} inputMarginTop={"30px"}>
-
-//         <BackgroundBox numberOfLines={1}>
-//             <BackgroundLine />
-//         </BackgroundBox>
-        
-//         <label htmlFor="email">Con amor, </label>
-//         <input type="email" name="email" placeholder="Email aquí..." className="fieldInput emailInput" />
-
-//     </FieldLabelContainer>
-
-
-
-//     <ButtonContainer>
-//         <button type="submit">💖🕊 <span>Mandar</span> 🕊💖</button>
-//     </ButtonContainer>
-
-
-// </form>
