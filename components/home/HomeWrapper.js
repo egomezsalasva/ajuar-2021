@@ -2,7 +2,7 @@
   // -Modules
   import styled from 'styled-components'
   // -Styles
-   import { breakpoints, pxToVH } from '../../styles/customStyles/globalStyles'
+   import { breakpoints } from '../../styles/customStyles/globalStyles'
 //
 
 // STYLES
