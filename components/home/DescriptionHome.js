@@ -68,7 +68,7 @@
                 <Line>
                     <span className="emoji">👇🏽</span> <br/>
                     SOMOS AJUAR <span className="supScript">(AJUAR)</span>,<br/>
-                    EL MENAJE DIGITAL <span className="emoji">🤳🏽</span> MULTIDISCIPLINAR<br/>
+                    EL MENAJE DIGITAL <span className="emoji">🤳🏽</span><br/>
                     QUE NECESITA TU PROYECTO <span className="emoji">🏡</span><br/>
                     PARA EL "SÍ <span className="emoji">💍</span> QUIERO" DE TU CLIENTE <span className="supScript">(AMOR)</span>.
                 </Line>
