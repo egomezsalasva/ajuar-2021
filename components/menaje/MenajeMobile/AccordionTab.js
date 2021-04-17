@@ -7,7 +7,8 @@
 
 // - Components
     import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
-import { pxToVW } from '../../../styles/customStyles/globalStyles'
+    import { breakpoints } from '../../../styles/customStyles/globalStyles'
+    import { pxToVW } from '../../../styles/customStyles/globalStyles'
 //
 
 
@@ -46,17 +47,24 @@ import { pxToVW } from '../../../styles/customStyles/globalStyles'
             //padding-top: 2.23214vh;
             padding-top: 2.3vh;
             border-top: 1px solid ${brandingColors.light};
+            @media (max-width: ${breakpoints.mobileDesign}){
+                height: 22.5845vw;
+            }
             .title{
                 font-family: ${brandingFonts.display};
                 color: ${brandingColors.light};
-                //font-size: 47px;
-                font-size: 10.7vw;
+                font-size: 47px;   
                 line-height: 1;
+                @media (max-width: ${breakpoints.mobileDesign}){
+                    font-size: 10.7vw;
+                }
             }
             .emoji{
-                //font-size: 35px;
-                font-size: 7.7vw;
+                font-size: 35px;
                 line-height: 1;
+                @media (max-width: ${breakpoints.mobileDesign}){
+                    font-size: 7.7vw;
+                }
             }
         }
     `

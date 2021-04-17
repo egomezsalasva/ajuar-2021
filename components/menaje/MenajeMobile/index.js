@@ -10,7 +10,8 @@
         import MenuButton from '../../global/MenuButton'
     // - Styles
         import { brandingColors, brandingFonts } from '../../../styles/customStyles/brandingStyles'
-import { pxToVW } from '../../../styles/customStyles/globalStyles'
+        import { breakpoints } from '../../../styles/customStyles/globalStyles'
+        import { pxToVW } from '../../../styles/customStyles/globalStyles'
 //
 
 
@@ -19,10 +20,14 @@ import { pxToVW } from '../../../styles/customStyles/globalStyles'
         color: ${brandingColors.light};
         margin: ${pxToVW.vwM20px};
         font-family: ${brandingFonts.textRegular};
-        //font-size: 19px;
-        font-size: 4.5893vw;
+        font-size: 19px;
         line-height: 1.157;
         letter-spacing: -0.3px;
+        @media (max-width: ${breakpoints.mobileDesign}){
+            font-size: 4.5893vw;
+        }
+
+
     `
     const AccordionContainer = styled.div`
         margin: 0 ${pxToVW.vwM20px} ${pxToVW.vwM80px};
