@@ -111,7 +111,7 @@ export default function ContactoMobile() {
       <ContactInfo />
 
       <FormContainer>
-        <form name="contact-mobile" method="POST" data-netlify="true">
+        <form>
           <input type="hidden" name="form-name" value="contact-mobile" />
 
           <FieldLabelContainer numberOfLines={5} inputMarginTop={"0px"}>
