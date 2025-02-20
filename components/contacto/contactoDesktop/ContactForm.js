@@ -118,7 +118,7 @@ const ButtonContainer = styled.div`
 // MAIN COMPONENT
 export default function ContactForm() {
   return (
-    <form name="contacto" action="/success" method="POST" data-netlify="true">
+    <form>
       <input type="hidden" name="form-name" value="contacto" />
 
       <FieldLabelContainer numberOfLines={7} inputMarginTop={"0px"}>
