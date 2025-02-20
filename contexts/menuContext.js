@@ -1,24 +1,32 @@
-import React, { createContext, useState, useRef } from 'react'
+import React, { createContext, useState, useRef } from "react";
 
-export const MenuContext = createContext()
+export const MenuContext = createContext();
 
 const MenuContextProvider = (props) => {
+  const [menuActive, setMenuActive] = useState(false);
 
-  const [menuActive, setMenuActive] = useState(false)
-  
   const toggleMenuActive = () => {
-      setMenuActive(!menuActive)
-  }
+    setMenuActive(!menuActive);
+  };
 
-  let menuContainerRef = useRef()
+  let menuContainerRef = useRef();
 
-  const dur = 0.7
-  const del = 0.1
+  const dur = 0.7;
+  const del = 0.1;
 
   return (
-    <MenuContext.Provider value={{ menuActive,  setMenuActive, toggleMenuActive, menuContainerRef, dur, del }}>
+    <MenuContext.Provider
+      value={{
+        menuActive,
+        setMenuActive,
+        toggleMenuActive,
+        menuContainerRef,
+        dur,
+        del,
+      }}
+    >
       {props.children}
     </MenuContext.Provider>
-  )
-}
-export default MenuContextProvider
+  );
+};
+export default MenuContextProvider;

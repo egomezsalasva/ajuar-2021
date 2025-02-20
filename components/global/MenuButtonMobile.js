@@ -1,14 +1,16 @@
 // IMPORTS
-  // -Modules
-  import styled from 'styled-components'
+// -Modules
+import styled from "styled-components";
 // -Styles
-  import {brandingColors, brandingFonts} from '../../styles/customStyles/brandingStyles'
-  import { breakpoints } from '../../styles/customStyles/globalStyles'
-  import { cursors, zIndexes } from '../../styles/customStyles/globalStyles'
+import {
+  brandingColors,
+  brandingFonts,
+} from "../../styles/customStyles/brandingStyles";
+import { breakpoints } from "../../styles/customStyles/globalStyles";
+import { cursors, zIndexes } from "../../styles/customStyles/globalStyles";
 // -Custom Hook
 
 //
-
 
 // STYLES
 const Button = styled.div`
@@ -23,24 +25,19 @@ const Button = styled.div`
   line-height: 0.95;
   cursor: ${cursors.eyePointer};
   color: ${brandingColors.light};
-`
+`;
 //
 
-
 //  MAIN COMPONENT
-const MenuButton = ({toggleMenuActive, menuActive, clickAnimation }) => {  
- 
-    
+const MenuButton = ({ toggleMenuActive, menuActive, clickAnimation }) => {
   const clickHandlers = () => {
-    toggleMenuActive()
-    clickAnimation()
-  }
+    toggleMenuActive();
+    clickAnimation();
+  };
 
   return (
-        <Button onClick={clickHandlers}  >
-          {menuActive ? "(Cerrar)" : "Menu"}
-        </Button>
-  )
-}
-export default MenuButton
+    <Button onClick={clickHandlers}>{menuActive ? "(Cerrar)" : "Menu"}</Button>
+  );
+};
+export default MenuButton;
 //
